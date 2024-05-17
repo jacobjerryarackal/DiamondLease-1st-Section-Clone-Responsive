@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DiamondLease</title>
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-snapchat"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="navbar" id="navbar">
+            <div class="logo-img">
+                <a href="#" class="logo"><img src="img/logo.png"></a> 
+            </div>
+            <div class="nav-button">
+                <a href="about">About</a>
+                <a href="offers">Offers</a>
+                <a href="coorporate">Coorporate</a>
+                <a href="personal">Personal</a>
+                <a href="locatrions">Locations</a>
+                <a href="contact">Contact Us</a>
+                <a href="icon"><i class="fa fa-bell" style="font-size: 24px;"></i></a>
+                <button class="profile">Jhon Doe</button>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-para">
+            <p>Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us on Social Media for New Offers</p>
+        </div>
+    </header>
+
+
+    
+
+
+
+<div class="home-container">
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-row1">
+                <a href="#" class="pick">Same as Pick-Up</a>
+                <a href="#" class="drop">Different Drop-Off</a>
+                <button>Select Vehicle type <select></select></button>
+            </div>
+            <div class="home-btns">
+                <button><i class="fa fa-map-marker"></i><span> AI Quoz <select></select></span></button>
+                <button><i class="fa fa-calendar"></i> 30/10/2023 <span>09:00 AM</span></button>
+                <button><i class="fa fa-calendar"></i> 29/11/2023 <span>09:00 AM</span></button>
+                <button><i class="fa fa-search" style="color: red; font-size: 24px;"></i></button>
+                <div class="v1"><img src="img/Line.png"></div>
+                <button class="quick">Quick Book</button>
+            </div>
+            <div class="home-row3">
+                <p>Download our App for easy accessibility anytime, anywhere!</p>
+                <div class="row3-img">
+                    <img src="img/app store.png">
+                    <img src="img/google play.png">
+                </div>
+            </div>
+        </div>
+        <div class="mobile-layout">
+            <div class="mobile-btns">
+                <button class="bcar">Book a Car</button>
+                <button class="qbook">Quick Book</button>
+            </div>
+
+            <div class="tab">
+                <a class="tablinks" onclick="openTab(event, 'Same as Pick-Up')"><span>Same as Pick-Up</span></a>
+                <a class="tablinks" onclick="openTab(event, 'Different Drop-Off')"><span>Different Drop-Off</span></a>
+                <a class="tablinks" onclick="openTab(event, 'Vechicle type')"><span>Vechicle type</span></a>
+            </div>
+
+            <div id="Same as Pick-Up" class="tabcontent">
+                <button><i class="fa fa-map-marker"></i> <span>Pickup Location </span><select></select></button>
+                <button><i class="fa fa-calendar"></i><span> Pick-Up Date & Time </span></button>
+                <button><i class="fa fa-calendar"></i><span> Drop Off Date & Time </span></button>
+            </div>
+
+            <div id="Different Drop-Off" class="tabcontent">
+                <button><i class="fa fa-map-marker"></i><span> Pickup Location </span><select></select></button>
+                <button><i class="fa fa-map-marker"></i><span> Drop Off Location </span><select></select></button>
+                <button><i class="fa fa-calendar"></i><span> Pick-Up Date & Time </span></button>
+                <button><i class="fa fa-calendar"></i><span> Drop Off Date & Time </span></button>
+            </div>
+
+            <div class="home-search">
+                <button class="search">Search</button>
+            </div>
+        </div>
+
+        <div class="summer-content">
+            <img src="img/Group 1171275029.png">
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+
+
+    function openTab(evt, details) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(details).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
